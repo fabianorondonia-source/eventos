@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel Netway — Eventos para Provedores 2026</title>
+<style>
+  :root {
+    --roxo-profundo: #270047;
+    --roxo-vivo: #9B57E9;
+    --lavanda: #D9C2F5;
+    --claro: #F3EAF7;
+    --navy: #0E2841;
+    --laranja: #E97132;
+    --verde: #2e8a57;
+    --amarelo: #d4a017;
+    --vermelho: #c0392b;
+    --cinza: #6b7280;
+    --bg: #f7f4fb;
+    --card: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Aptos", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--navy);
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+  }
+
+  /* ===== Header — faixa roxo profundo com fitas, Modelo Netway ===== */
+  header {
+    position: relative;
+    background: var(--roxo-profundo);
+    color: #fff;
+    padding: 26px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    overflow: hidden;
+  }
+  header .ribbons { position: absolute; right: 0; top: 0; height: 100%; width: 480px; pointer-events: none; }
+  .brand { display: flex; align-items: center; gap: 18px; z-index: 1; }
+  .brand img { height: 44px; display: block; }
+  .brand .sub {
+    border-left: 2px solid var(--roxo-vivo);
+    padding-left: 16px;
+    font-size: .95rem; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--lavanda); font-weight: 300;
+  }
+  .header-right { display: flex; align-items: center; gap: 16px; font-size: .85rem; z-index: 1; color: var(--lavanda); }
+  .live-dot {
+    display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+    background: #4ade80; margin-right: 6px;
+    animation: pulse 1.6s infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+
+  main { max-width: 1280px; margin: 0 auto; padding: 26px 32px 48px; width: 100%; flex: 1; }
+
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-bottom: 26px; }
+  .kpi {
+    background: var(--card); border-radius: 12px; padding: 18px 20px;
+    border-left: 5px solid var(--roxo-vivo);
+    box-shadow: 0 1px 4px rgba(39,0,71,.10);
+  }
+  .kpi .t { font-size: .78rem; text-transform: uppercase; letter-spacing: .6px; color: var(--cinza); margin-bottom: 6px; }
+  .kpi .v { font-size: 1.55rem; font-weight: 700; color: var(--roxo-profundo); }
+  .kpi .d { font-size: .8rem; color: var(--cinza); margin-top: 4px; }
+
+  /* Destaque próximo evento */
+  .proximo {
+    background: linear-gradient(120deg, var(--roxo-profundo), #4a1a7a);
+    color: #fff; border-radius: 12px; padding: 20px 24px; margin-bottom: 26px;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;
+    box-shadow: 0 2px 8px rgba(39,0,71,.25);
+  }
+  .proximo .rotulo { font-size: .72rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--lavanda); margin-bottom: 6px; }
+  .proximo .nome { font-size: 1.3rem; font-weight: 700; }
+  .proximo .meta { font-size: .88rem; color: var(--lavanda); margin-top: 4px; }
+  .proximo .contagem { text-align: center; background: rgba(255,255,255,.12); border-radius: 10px; padding: 12px 22px; }
+  .proximo .contagem .n { font-size: 2rem; font-weight: 700; }
+  .proximo .contagem .l { font-size: .7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--lavanda); }
+
+  h2.section {
+    font-size: 1.05rem; color: var(--roxo-profundo); margin: 8px 0 14px;
+    text-transform: uppercase; letter-spacing: 1px;
+    border-bottom: 2px solid var(--lavanda); padding-bottom: 6px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  h2.section .cnt { font-size: .75rem; color: var(--cinza); text-transform: none; letter-spacing: 0; }
+
+  /* Filtros */
+  .filtros { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  .filtros button {
+    border: 1px solid var(--lavanda); background: var(--card); color: var(--roxo-profundo);
+    padding: 7px 16px; border-radius: 999px; font-size: .8rem; cursor: pointer;
+    font-weight: 600; transition: all .15s;
+  }
+  .filtros button.ativo { background: var(--roxo-profundo); color: #fff; border-color: var(--roxo-profundo); }
+  .filtros button:hover { border-color: var(--roxo-vivo); }
+
+  table.eventos { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(39,0,71,.10); margin-bottom: 30px; }
+  table.eventos th {
+    background: var(--roxo-profundo); color: #fff; text-align: left;
+    padding: 10px 16px; font-size: .78rem; text-transform: uppercase; letter-spacing: .6px;
+  }
+  table.eventos td { padding: 11px 16px; font-size: .88rem; border-bottom: 1px solid #f0edf4; vertical-align: middle; }
+  table.eventos tr:last-child td { border-bottom: none; }
+  table.eventos tr.passado td { opacity: .45; }
+  table.eventos tr.hoje { background: #f3ffe6; }
+  table.eventos td .nome-ev { font-weight: 600; color: var(--roxo-profundo); }
+  table.eventos td .serie-ev { font-size: .72rem; color: var(--cinza); }
+
+  .badge {
+    font-size: .68rem; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+    white-space: nowrap; text-transform: uppercase; letter-spacing: .4px; display: inline-block;
+  }
+  .badge.realizado { background: #eceff1; color: var(--cinza); }
+  .badge.hoje { background: #e7f5ec; color: var(--verde); }
+  .badge.proximo { background: var(--claro); color: var(--roxo-vivo); }
+  .badge.futuro { background: #fdf0e6; color: var(--laranja); }
+  .badge.nacional { background: #e7f5ec; color: var(--verde); }
+  .badge.internacional { background: #e8f0fe; color: #1a56db; }
+
+  .legenda { display: flex; gap: 18px; flex-wrap: wrap; margin: 4px 0 0; font-size: .78rem; color: var(--cinza); }
+  .legenda span { display: flex; align-items: center; gap: 6px; }
+  .dot { flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; }
+  .dot.realizado { background: var(--cinza); }
+  .dot.hoje { background: var(--verde); }
+  .dot.proximo { background: var(--roxo-vivo); }
+  .dot.futuro { background: var(--laranja); }
+
+  /* ===== Footer — faixa roxo profundo com logo, Modelo Netway ===== */
+  footer {
+    position: relative;
+    background: var(--roxo-profundo);
+    color: var(--lavanda);
+    padding: 18px 36px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 10px;
+    overflow: hidden;
+    margin-top: auto;
+  }
+  footer img { height: 30px; z-index: 1; }
+  footer .info { font-size: .75rem; z-index: 1; }
+  footer .ribbons { position: absolute; right: 0; top: 0; height: 100%; width: 380px; pointer-events: none; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img src="logo_netway.png" alt="Grupo Netway">
+    <div class="sub">Eventos para Provedores · 2026</div>
+  </div>
+  <div class="header-right">
+    <span><span class="live-dot"></span>Atualização em tempo real</span>
+    <span id="ultima">—</span>
+  </div>
+  <svg class="ribbons" viewBox="0 0 480 110" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <path d="M480,-20 C360,10 330,95 420,130 C470,148 500,90 480,-20 Z" fill="#9B57E9" opacity=".85"/>
+    <path d="M430,-30 C330,-5 305,80 375,120 C300,105 285,20 355,-30 Z" fill="#D9C2F5" opacity=".55"/>
+    <path d="M480,40 C430,55 425,95 465,115 L480,115 Z" fill="#7A3BC4" opacity=".9"/>
+  </svg>
+</header>
+<main>
+  <div class="kpis" id="kpis"></div>
+
+  <div class="proximo" id="proximo" style="display:none">
+    <div>
+      <div class="rotulo">Próximo evento</div>
+      <div class="nome" id="px-nome">—</div>
+      <div class="meta" id="px-meta">—</div>
+    </div>
+    <div class="contagem">
+      <div class="n" id="px-dias">—</div>
+      <div class="l">dias</div>
+    </div>
+  </div>
+
+  <div class="filtros" id="filtros">
+    <button data-f="todos" class="ativo">Todos</button>
+    <button data-f="nacional">🇧🇷 Nacionais</button>
+    <button data-f="internacional">🌎 Internacionais</button>
+    <button data-f="principais">⭐ Principais</button>
+    <button data-f="futuros">Somente futuros</button>
+  </div>
+
+  <h2 class="section">🇧🇷 Eventos Nacionais <span class="cnt" id="cnt-nac"></span></h2>
+  <table class="eventos">
+    <thead><tr><th>Evento</th><th>Data</th><th>Cidade</th><th>Local</th><th>Status</th></tr></thead>
+    <tbody id="tb-nacional"></tbody>
+  </table>
+
+  <h2 class="section">🌎 Eventos Internacionais <span class="cnt" id="cnt-int"></span></h2>
+  <table class="eventos">
+    <thead><tr><th>Evento</th><th>Data</th><th>Cidade / País</th><th>Local</th><th>Status</th></tr></thead>
+    <tbody id="tb-internacional"></tbody>
+  </table>
+
+  <div class="legenda">
+    <span><span class="dot realizado"></span>Realizado</span>
+    <span><span class="dot hoje"></span>Acontecendo agora</span>
+    <span><span class="dot proximo"></span>Próximos 30 dias</span>
+    <span><span class="dot futuro"></span>Futuro</span>
+  </div>
+</main>
+<footer>
+  <img src="logo_netway.png" alt="Netway">
+  <div class="info">Painel Netway · edite <strong>dados.json</strong> e o painel atualiza sozinho a cada 5 segundos</div>
+  <svg class="ribbons" viewBox="0 0 380 66" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <path d="M380,70 C300,60 280,10 340,-10 C380,-22 400,30 380,70 Z" fill="#9B57E9" opacity=".8"/>
+    <path d="M330,75 C270,60 260,20 300,0 C250,15 245,60 295,80 Z" fill="#D9C2F5" opacity=".45"/>
+  </svg>
+</footer>
+
+<script>
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let lastJson = '';
+let dados = null;
+let filtro = 'todos';
+
+const MESES = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+
+function hojeISO() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function fmtData(ini, fim) {
+  const [ , mi, di ] = ini.split('-').map(Number);
+  const [ , mf, df ] = fim.split('-').map(Number);
+  if (ini === fim) return `${di} ${MESES[mi-1]}`;
+  if (mi === mf) return `${di} a ${df} ${MESES[mi-1]}`;
+  return `${di} ${MESES[mi-1]} a ${df} ${MESES[mf-1]}`;
+}
+
+function statusEvento(e) {
+  const hoje = hojeISO();
+  if (e.fim < hoje) return 'realizado';
+  if (e.inicio <= hoje && hoje <= e.fim) return 'hoje';
+  const diff = diasAte(e.inicio);
+  return diff <= 30 ? 'proximo' : 'futuro';
+}
+
+function diasAte(iso) {
+  const [y,m,d] = iso.split('-').map(Number);
+  const alvo = new Date(y, m-1, d);
+  const agora = new Date();
+  agora.setHours(0,0,0,0);
+  return Math.round((alvo - agora) / 86400000);
+}
+
+const LABEL = { realizado: 'Realizado', hoje: 'Agora', proximo: 'Em breve', futuro: 'Futuro' };
+
+async function carregar() {
+  try {
+    const r = await fetch('dados.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) return;
+    const txt = await r.text();
+    if (txt === lastJson) return;
+    lastJson = txt;
+    dados = JSON.parse(txt);
+    render();
+  } catch (e) { /* servidor pode estar reiniciando */ }
+}
+
+function passaFiltro(e) {
+  const st = statusEvento(e);
+  if (filtro === 'nacional') return e.categoria === 'nacional';
+  if (filtro === 'internacional') return e.categoria === 'internacional';
+  if (filtro === 'principais') return e.serie === 'Principal';
+  if (filtro === 'futuros') return st !== 'realizado';
+  return true;
+}
+
+function linha(e) {
+  const st = statusEvento(e);
+  return `<tr class="${st === 'realizado' ? 'passado' : ''}${st === 'hoje' ? ' hoje' : ''}">
+    <td><div class="nome-ev">${esc(e.nome)}</div><div class="serie-ev">${esc(e.serie || '')}</div></td>
+    <td>${fmtData(e.inicio, e.fim)}</td>
+    <td>${esc(e.cidade)}</td>
+    <td>${esc(e.local || '—')}</td>
+    <td><span class="badge ${st}">${LABEL[st]}</span></td>
+  </tr>`;
+}
+
+function render() {
+  if (!dados) return;
+  document.getElementById('ultima').textContent = 'Dados: ' + (dados.ultimaAtualizacao || '—');
+
+  const evs = (dados.eventos || []).slice().sort((a,b) => a.inicio.localeCompare(b.inicio));
+  const futuros = evs.filter(e => statusEvento(e) !== 'realizado');
+  const nac = evs.filter(e => e.categoria === 'nacional');
+  const int = evs.filter(e => e.categoria === 'internacional');
+  const esteMes = futuros.filter(e => {
+    const h = hojeISO();
+    return e.inicio.slice(0,7) === h.slice(0,7) || (e.inicio <= h && h <= e.fim);
+  });
+
+  // KPIs
+  document.getElementById('kpis').innerHTML = [
+    { t: 'Eventos em 2026', v: evs.length, d: `${nac.length} nacionais · ${int.length} internacionais` },
+    { t: 'Ainda por vir', v: futuros.length, d: 'a partir de hoje' },
+    { t: 'Neste mês', v: esteMes.length, d: 'eventos em ' + new Date().toLocaleDateString('pt-BR', { month: 'long' }) },
+    { t: 'Principais (grande porte)', v: evs.filter(e => e.serie === 'Principal').length, d: 'Abrint, Futurecom, MWC, Fiber Connect...' }
+  ].map(k => `
+    <div class="kpi">
+      <div class="t">${k.t}</div>
+      <div class="v">${k.v}</div>
+      <div class="d">${k.d}</div>
+    </div>`).join('');
+
+  // Próximo evento
+  const px = futuros.find(e => statusEvento(e) !== 'hoje');
+  const acontecendo = futuros.find(e => statusEvento(e) === 'hoje');
+  const destaque = acontecendo || px;
+  const box = document.getElementById('proximo');
+  if (destaque) {
+    box.style.display = 'flex';
+    document.getElementById('px-nome').textContent = destaque.nome;
+    document.getElementById('px-meta').textContent =
+      fmtData(destaque.inicio, destaque.fim) + ' · ' + destaque.cidade + (destaque.local ? ' · ' + destaque.local : '');
+    const dias = diasAte(destaque.inicio);
+    document.getElementById('px-dias').textContent = dias <= 0 ? 'HOJE' : dias;
+    box.querySelector('.rotulo').textContent = dias <= 0 ? 'Acontecendo agora' : 'Próximo evento';
+  } else {
+    box.style.display = 'none';
+  }
+
+  // Tabelas
+  const nacF = nac.filter(passaFiltro);
+  const intF = int.filter(passaFiltro);
+  document.getElementById('tb-nacional').innerHTML =
+    (filtro === 'internacional') ? '' : nacF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
+  document.getElementById('tb-internacional').innerHTML =
+    (filtro === 'nacional') ? '' : intF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
+  document.getElementById('cnt-nac').textContent = (filtro === 'internacional') ? '' : nacF.length + ' evento(s)';
+  document.getElementById('cnt-int').textContent = (filtro === 'nacional') ? '' : intF.length + ' evento(s)';
+}
+
+document.getElementById('filtros').addEventListener('click', ev => {
+  const b = ev.target.closest('button');
+  if (!b) return;
+  filtro = b.dataset.f;
+  document.querySelectorAll('.filtros button').forEach(x => x.classList.toggle('ativo', x === b));
+  render();
+});
+
+carregar();
+setInterval(carregar, 5000);
+setInterval(render, 60000); // recalcula contagens/status mesmo sem mudança no JSON
+</script>
+</body>
+</html>
