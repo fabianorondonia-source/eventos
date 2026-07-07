@@ -48,7 +48,7 @@
     { "nome": "ISP Meeting Manaus", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-09-22", "fim": "2026-09-22", "cidade": "Manaus – AM", "local": "" },
     { "nome": "ISP Meeting Montes Claros", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-09-30", "fim": "2026-09-30", "cidade": "Montes Claros – MG", "local": "" },
     { "nome": "Futurecom 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-10-06", "fim": "2026-10-08", "cidade": "São Paulo – SP", "local": "São Paulo Expo" },
-    { "nome": "Network X 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-10-13", "fim": "2026-10-15", "cidade": "Viena, Áustria", "local": "" },
+    { "nome": "Network X 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-10-13", "fim": "2026-10-15", "cidade": "Viena, Áustria", "local": "VIECON – Vienna Congress Center" },
     { "nome": "ISP Meeting Rio de Janeiro", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-10-14", "fim": "2026-10-14", "cidade": "Rio de Janeiro – RJ", "local": "" },
     { "nome": "LACNIC 46 / LACNOG 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-10-19", "fim": "2026-10-22", "cidade": "Mendoza, Argentina", "local": "" },
     { "nome": "ISP Meeting Juazeiro do Norte", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-10-21", "fim": "2026-10-21", "cidade": "Juazeiro do Norte – CE", "local": "" },
