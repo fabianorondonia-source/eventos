@@ -70,6 +70,13 @@
     { "nome": "CONARH 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-08-18", "fim": "2026-08-20", "cidade": "São Paulo – SP", "local": "São Paulo Expo" },
     { "nome": "CONGREGARH 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-09-30", "fim": "2026-10-02", "cidade": "Porto Alegre – RS", "local": "Centro de Eventos PUCRS" },
     { "nome": "W6 Brasil HR Summit 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-10-06", "fim": "2026-10-06", "cidade": "São Paulo – SP", "local": "Nacional Inn Jaraguá" },
-    { "nome": "People & Health Executive Summit 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-10-21", "fim": "2026-10-21", "cidade": "São Paulo – SP", "local": "WTC Events Center" }
+    { "nome": "People & Health Executive Summit 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-10-21", "fim": "2026-10-21", "cidade": "São Paulo – SP", "local": "WTC Events Center" },
+
+    { "nome": "M&A Connect 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-04-23", "fim": "2026-04-23", "cidade": "São Paulo – SP", "local": "WTC Events Center" },
+    { "nome": "Latin Lawyer Live: Mergers and Acquisitions 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-06-17", "fim": "2026-06-17", "cidade": "São Paulo – SP", "local": "Rosewood São Paulo" },
+    { "nome": "ABVCAP VC Day 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-09-16", "fim": "2026-09-16", "cidade": "São Paulo – SP", "local": "" },
+    { "nome": "ABVCAP Experience 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-09-21", "fim": "2026-09-23", "cidade": "São Paulo – SP", "local": "" },
+    { "nome": "Private Equity Latin America Forum 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-12-01", "fim": "2026-12-02", "cidade": "São Paulo – SP", "local": "" },
+    { "nome": "Latin Lawyer M&A Conference 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-12-03", "fim": "2026-12-03", "cidade": "São Paulo – SP", "local": "" }
   ]
 }

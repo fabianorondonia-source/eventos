@@ -12,6 +12,7 @@
     --claro: #F3EAF7;
     --navy: #0E2841;
     --laranja: #E97132;
+    --teal: #0f9d8a;
     --verde: #2e8a57;
     --amarelo: #d4a017;
     --vermelho: #c0392b;
@@ -128,6 +129,9 @@
   table.eventos.rh th { background: var(--laranja); }
   .filtros button.rh-btn.ativo { background: var(--laranja); border-color: var(--laranja); }
 
+  table.eventos.ma th { background: var(--teal); }
+  .filtros button.ma-btn.ativo { background: var(--teal); border-color: var(--teal); }
+
   .legenda { display: flex; gap: 18px; flex-wrap: wrap; margin: 4px 0 0; font-size: .78rem; color: var(--cinza); }
   .legenda span { display: flex; align-items: center; gap: 6px; }
   .dot { flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; }
@@ -191,6 +195,7 @@
     <button data-f="futuros">Somente futuros</button>
     <button data-f="provedores">📡 Provedores/Telecom</button>
     <button data-f="rh" class="rh-btn">👥 RH Empresarial</button>
+    <button data-f="ma" class="ma-btn">🤝 M&amp;A</button>
   </div>
 
   <div id="sec-provedores">
@@ -212,6 +217,14 @@
     <table class="eventos rh">
       <thead><tr><th>Evento</th><th>Data</th><th>Cidade</th><th>Local</th><th>Status</th></tr></thead>
       <tbody id="tb-rh"></tbody>
+    </table>
+  </div>
+
+  <div id="sec-ma">
+    <h2 class="section">🤝 Eventos Nacionais — M&amp;A <span class="cnt" id="cnt-ma"></span></h2>
+    <table class="eventos ma">
+      <thead><tr><th>Evento</th><th>Data</th><th>Cidade</th><th>Local</th><th>Status</th></tr></thead>
+      <tbody id="tb-ma"></tbody>
     </table>
   </div>
 
@@ -283,7 +296,9 @@ async function carregar() {
 }
 
 function setorEvento(e) {
-  return e.setor === 'rh' ? 'rh' : 'provedores';
+  if (e.setor === 'rh') return 'rh';
+  if (e.setor === 'ma') return 'ma';
+  return 'provedores';
 }
 
 function passaFiltro(e) {
@@ -314,6 +329,7 @@ function render() {
   const futuros = evs.filter(e => statusEvento(e) !== 'realizado');
   const provedores = evs.filter(e => setorEvento(e) === 'provedores');
   const rhEventos = evs.filter(e => setorEvento(e) === 'rh');
+  const maEventos = evs.filter(e => setorEvento(e) === 'ma');
   const nac = provedores.filter(e => e.categoria === 'nacional');
   const int = provedores.filter(e => e.categoria === 'internacional');
   const esteMes = futuros.filter(e => {
@@ -323,11 +339,12 @@ function render() {
 
   // KPIs
   document.getElementById('kpis').innerHTML = [
-    { t: 'Eventos em 2026', v: evs.length, d: `${nac.length} nacionais · ${int.length} internacionais · ${rhEventos.length} RH` },
+    { t: 'Eventos em 2026', v: evs.length, d: `${nac.length} nacionais · ${int.length} internacionais · ${rhEventos.length} RH · ${maEventos.length} M&A` },
     { t: 'Ainda por vir', v: futuros.length, d: 'a partir de hoje' },
     { t: 'Neste mês', v: esteMes.length, d: 'eventos em ' + new Date().toLocaleDateString('pt-BR', { month: 'long' }) },
     { t: 'Principais (grande porte)', v: evs.filter(e => e.serie === 'Principal').length, d: 'Abrint, Futurecom, MWC, Fiber Connect...' },
-    { t: 'RH Empresarial', v: rhEventos.length, d: 'CONARH, RH Summit, RHRio, CONCARH...' }
+    { t: 'RH Empresarial', v: rhEventos.length, d: 'CONARH, RH Summit, RHRio, CONCARH...' },
+    { t: 'M&A', v: maEventos.length, d: 'ABVCAP, Latin Lawyer, M&A Connect...' }
   ].map(k => `
     <div class="kpi">
       <div class="t">${k.t}</div>
@@ -353,24 +370,30 @@ function render() {
   }
 
   // Visibilidade das seções por setor
-  const mostraProvedores = filtro !== 'rh';
-  const mostraRH = filtro !== 'provedores';
+  const mostraProvedores = filtro !== 'rh' && filtro !== 'ma';
+  const mostraRH = filtro !== 'provedores' && filtro !== 'ma';
+  const mostraMA = filtro !== 'provedores' && filtro !== 'rh';
   document.getElementById('sec-provedores').style.display = mostraProvedores ? '' : 'none';
   document.getElementById('sec-rh').style.display = mostraRH ? '' : 'none';
+  document.getElementById('sec-ma').style.display = mostraMA ? '' : 'none';
 
   // Tabelas
   const nacF = nac.filter(passaFiltro);
   const intF = int.filter(passaFiltro);
   const rhF = rhEventos.filter(passaFiltro);
+  const maF = maEventos.filter(passaFiltro);
   document.getElementById('tb-nacional').innerHTML =
     (filtro === 'internacional') ? '' : nacF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
   document.getElementById('tb-internacional').innerHTML =
     (filtro === 'nacional') ? '' : intF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
   document.getElementById('tb-rh').innerHTML =
     rhF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
+  document.getElementById('tb-ma').innerHTML =
+    maF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
   document.getElementById('cnt-nac').textContent = (filtro === 'internacional') ? '' : nacF.length + ' evento(s)';
   document.getElementById('cnt-int').textContent = (filtro === 'nacional') ? '' : intF.length + ' evento(s)';
   document.getElementById('cnt-rh').textContent = rhF.length + ' evento(s)';
+  document.getElementById('cnt-ma').textContent = maF.length + ' evento(s)';
 }
 
 document.getElementById('filtros').addEventListener('click', ev => {
