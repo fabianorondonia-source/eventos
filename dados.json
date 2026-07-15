@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "09/07/2026",
+  "ultimaAtualizacao": "15/07/2026",
   "eventos": [
     { "nome": "ExpoISP Expedição — RO", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-16", "fim": "2026-01-16", "cidade": "Porto Velho – RO", "local": "" },
     { "nome": "ExpoISP Expedição — AL", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-28", "fim": "2026-01-28", "cidade": "Maceió – AL", "local": "" },
@@ -53,7 +53,7 @@
     { "nome": "InterISP Rio de Janeiro", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-10-22", "fim": "2026-10-22", "cidade": "Rio de Janeiro – RJ", "local": "" },
     { "nome": "ISP Meeting São Luís", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-10-28", "fim": "2026-10-28", "cidade": "São Luís – MA", "local": "" },
     { "nome": "Apronet 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-10-28", "fim": "2026-10-29", "cidade": "Florianópolis – SC", "local": "Costão do Santinho Resort" },
-    { "nome": "Abrint Nordeste 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-10-29", "fim": "2026-10-30", "cidade": "Fortaleza – CE", "local": "" },
+    { "nome": "Abrint Nordeste 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-11-05", "fim": "2026-11-06", "cidade": "Fortaleza – CE", "local": "Centro de Eventos do Ceará" },
     { "nome": "WISPAPALOOZA 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-11-02", "fim": "2026-11-05", "cidade": "Las Vegas (NV), EUA", "local": "Caesars Palace" },
     { "nome": "Web Summit 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-11-09", "fim": "2026-11-12", "cidade": "Lisboa, Portugal", "local": "" },
     { "nome": "ISP Meeting Santarém", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-11-11", "fim": "2026-11-11", "cidade": "Santarém – PA", "local": "" },
