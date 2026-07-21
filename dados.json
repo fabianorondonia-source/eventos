@@ -77,6 +77,10 @@
     { "nome": "ABVCAP VC Day 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-09-16", "fim": "2026-09-16", "cidade": "São Paulo – SP", "local": "" },
     { "nome": "ABVCAP Experience 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-09-21", "fim": "2026-09-23", "cidade": "São Paulo – SP", "local": "" },
     { "nome": "Private Equity Latin America Forum 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-12-01", "fim": "2026-12-02", "cidade": "São Paulo – SP", "local": "" },
-    { "nome": "Latin Lawyer M&A Conference 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-12-03", "fim": "2026-12-03", "cidade": "São Paulo – SP", "local": "" }
+    { "nome": "Latin Lawyer M&A Conference 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-12-03", "fim": "2026-12-03", "cidade": "São Paulo – SP", "local": "" },
+
+    { "nome": "Fortinet Accelerate 2026", "categoria": "internacional", "serie": "Principal", "setor": "ciber", "inicio": "2026-03-09", "fim": "2026-03-13", "cidade": "Las Vegas (NV), EUA", "local": "Mandalay Bay Convention Center" },
+    { "nome": "Fortinet Cybersecurity Summit Brasil 2026", "categoria": "nacional", "serie": "Principal", "setor": "ciber", "inicio": "2026-08-11", "fim": "2026-08-11", "cidade": "São Paulo – SP", "local": "Transamerica Expo Center" },
+    { "nome": "Fortinet XPERTS Summit 2026 (Americas)", "categoria": "internacional", "serie": "Principal", "setor": "ciber", "inicio": "2026-11-09", "fim": "2026-11-13", "cidade": "Nashville (TN), EUA", "local": "Gaylord Opryland Resort" }
   ]
 }

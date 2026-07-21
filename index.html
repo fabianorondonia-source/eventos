@@ -132,6 +132,9 @@
   table.eventos.ma th { background: var(--teal); }
   .filtros button.ma-btn.ativo { background: var(--teal); border-color: var(--teal); }
 
+  table.eventos.ciber th { background: #1a56db; }
+  .filtros button.ciber-btn.ativo { background: #1a56db; border-color: #1a56db; }
+
   .legenda { display: flex; gap: 18px; flex-wrap: wrap; margin: 4px 0 0; font-size: .78rem; color: var(--cinza); }
   .legenda span { display: flex; align-items: center; gap: 6px; }
   .dot { flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; }
@@ -196,6 +199,7 @@
     <button data-f="provedores">📡 Provedores/Telecom</button>
     <button data-f="rh" class="rh-btn">👥 RH Empresarial</button>
     <button data-f="ma" class="ma-btn">🤝 M&amp;A</button>
+    <button data-f="ciber" class="ciber-btn">🛡️ Cibersegurança</button>
   </div>
 
   <div id="sec-provedores">
@@ -225,6 +229,20 @@
     <table class="eventos ma">
       <thead><tr><th>Evento</th><th>Data</th><th>Cidade</th><th>Local</th><th>Status</th></tr></thead>
       <tbody id="tb-ma"></tbody>
+    </table>
+  </div>
+
+  <div id="sec-ciber">
+    <h2 class="section">🛡️ Eventos Nacionais — Cibersegurança (Fortinet) <span class="cnt" id="cnt-ciber-nac"></span></h2>
+    <table class="eventos ciber">
+      <thead><tr><th>Evento</th><th>Data</th><th>Cidade</th><th>Local</th><th>Status</th></tr></thead>
+      <tbody id="tb-ciber-nac"></tbody>
+    </table>
+
+    <h2 class="section">🛡️ Eventos Internacionais — Cibersegurança (Fortinet) <span class="cnt" id="cnt-ciber-int"></span></h2>
+    <table class="eventos ciber">
+      <thead><tr><th>Evento</th><th>Data</th><th>Cidade / País</th><th>Local</th><th>Status</th></tr></thead>
+      <tbody id="tb-ciber-int"></tbody>
     </table>
   </div>
 
@@ -298,6 +316,7 @@ async function carregar() {
 function setorEvento(e) {
   if (e.setor === 'rh') return 'rh';
   if (e.setor === 'ma') return 'ma';
+  if (e.setor === 'ciber') return 'ciber';
   return 'provedores';
 }
 
@@ -330,8 +349,11 @@ function render() {
   const provedores = evs.filter(e => setorEvento(e) === 'provedores');
   const rhEventos = evs.filter(e => setorEvento(e) === 'rh');
   const maEventos = evs.filter(e => setorEvento(e) === 'ma');
+  const ciberEventos = evs.filter(e => setorEvento(e) === 'ciber');
   const nac = provedores.filter(e => e.categoria === 'nacional');
   const int = provedores.filter(e => e.categoria === 'internacional');
+  const ciberNac = ciberEventos.filter(e => e.categoria === 'nacional');
+  const ciberInt = ciberEventos.filter(e => e.categoria === 'internacional');
   const esteMes = futuros.filter(e => {
     const h = hojeISO();
     return e.inicio.slice(0,7) === h.slice(0,7) || (e.inicio <= h && h <= e.fim);
@@ -339,12 +361,13 @@ function render() {
 
   // KPIs
   document.getElementById('kpis').innerHTML = [
-    { t: 'Eventos em 2026', v: evs.length, d: `${nac.length} nacionais · ${int.length} internacionais · ${rhEventos.length} RH · ${maEventos.length} M&A` },
+    { t: 'Eventos em 2026', v: evs.length, d: `${nac.length} nacionais · ${int.length} internacionais · ${rhEventos.length} RH · ${maEventos.length} M&A · ${ciberEventos.length} Ciber` },
     { t: 'Ainda por vir', v: futuros.length, d: 'a partir de hoje' },
     { t: 'Neste mês', v: esteMes.length, d: 'eventos em ' + new Date().toLocaleDateString('pt-BR', { month: 'long' }) },
     { t: 'Principais (grande porte)', v: evs.filter(e => e.serie === 'Principal').length, d: 'Abrint, Futurecom, MWC, Fiber Connect...' },
     { t: 'RH Empresarial', v: rhEventos.length, d: 'CONARH, RH Summit, RHRio, CONCARH...' },
-    { t: 'M&A', v: maEventos.length, d: 'ABVCAP, Latin Lawyer, M&A Connect...' }
+    { t: 'M&A', v: maEventos.length, d: 'ABVCAP, Latin Lawyer, M&A Connect...' },
+    { t: 'Cibersegurança (Fortinet)', v: ciberEventos.length, d: 'Accelerate, Summit Brasil, XPERTS...' }
   ].map(k => `
     <div class="kpi">
       <div class="t">${k.t}</div>
@@ -370,12 +393,12 @@ function render() {
   }
 
   // Visibilidade das seções por setor
-  const mostraProvedores = filtro !== 'rh' && filtro !== 'ma';
-  const mostraRH = filtro !== 'provedores' && filtro !== 'ma';
-  const mostraMA = filtro !== 'provedores' && filtro !== 'rh';
-  document.getElementById('sec-provedores').style.display = mostraProvedores ? '' : 'none';
-  document.getElementById('sec-rh').style.display = mostraRH ? '' : 'none';
-  document.getElementById('sec-ma').style.display = mostraMA ? '' : 'none';
+  const filtrosSetor = ['provedores', 'rh', 'ma', 'ciber'];
+  const ehFiltroSetor = filtrosSetor.includes(filtro);
+  document.getElementById('sec-provedores').style.display = (!ehFiltroSetor || filtro === 'provedores') ? '' : 'none';
+  document.getElementById('sec-rh').style.display = (!ehFiltroSetor || filtro === 'rh') ? '' : 'none';
+  document.getElementById('sec-ma').style.display = (!ehFiltroSetor || filtro === 'ma') ? '' : 'none';
+  document.getElementById('sec-ciber').style.display = (!ehFiltroSetor || filtro === 'ciber') ? '' : 'none';
 
   // Tabelas
   const nacF = nac.filter(passaFiltro);
@@ -390,10 +413,18 @@ function render() {
     rhF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
   document.getElementById('tb-ma').innerHTML =
     maF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
+  const ciberNacF = ciberNac.filter(passaFiltro);
+  const ciberIntF = ciberInt.filter(passaFiltro);
+  document.getElementById('tb-ciber-nac').innerHTML =
+    (filtro === 'internacional') ? '' : ciberNacF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
+  document.getElementById('tb-ciber-int').innerHTML =
+    (filtro === 'nacional') ? '' : ciberIntF.map(linha).join('') || '<tr><td colspan="5" style="color:var(--cinza)">Nenhum evento no filtro atual.</td></tr>';
   document.getElementById('cnt-nac').textContent = (filtro === 'internacional') ? '' : nacF.length + ' evento(s)';
   document.getElementById('cnt-int').textContent = (filtro === 'nacional') ? '' : intF.length + ' evento(s)';
   document.getElementById('cnt-rh').textContent = rhF.length + ' evento(s)';
   document.getElementById('cnt-ma').textContent = maF.length + ' evento(s)';
+  document.getElementById('cnt-ciber-nac').textContent = (filtro === 'internacional') ? '' : ciberNacF.length + ' evento(s)';
+  document.getElementById('cnt-ciber-int').textContent = (filtro === 'nacional') ? '' : ciberIntF.length + ' evento(s)';
 }
 
 document.getElementById('filtros').addEventListener('click', ev => {
