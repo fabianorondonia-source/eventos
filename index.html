@@ -4,13 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Painel Netway — Eventos para Provedores 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --roxo-profundo: #270047;
-    --roxo-vivo: #9B57E9;
-    --lavanda: #D9C2F5;
-    --claro: #F3EAF7;
-    --navy: #0E2841;
+    --roxo-profundo: #38126E;
+    --roxo-vivo: #7C1FD1;
+    --roxo-netway: #6E00A8;
+    --grafite: #363435;
+    --lavanda: #D8C0F0;
+    --claro: #F3EAFB;
+    --navy: #2A2138;
     --laranja: #E97132;
     --teal: #0f9d8a;
     --verde: #2e8a57;
@@ -22,7 +26,7 @@
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: "Aptos", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-family: "Poppins", "Aptos", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     background: var(--bg);
     color: var(--navy);
     min-height: 100vh;
@@ -32,7 +36,7 @@
   /* ===== Header — faixa roxo profundo com fitas, Modelo Netway ===== */
   header {
     position: relative;
-    background: var(--roxo-profundo);
+    background: linear-gradient(135deg, #2E0B5E 0%, #4B1490 55%, #6E00A8 100%);
     color: #fff;
     padding: 26px 36px;
     display: flex;
@@ -44,12 +48,23 @@
   }
   header .ribbons { position: absolute; right: 0; top: 0; height: 100%; width: 480px; pointer-events: none; }
   .brand { display: flex; align-items: center; gap: 18px; z-index: 1; }
-  .brand img { height: 44px; display: block; }
+  .logo-block .tagline {
+    font-size: .58rem; letter-spacing: 2.6px; text-transform: uppercase;
+    color: var(--lavanda); font-weight: 600; margin-bottom: 1px;
+  }
+  .logo-wordmark {
+    font-family: "Poppins", sans-serif; font-weight: 800; font-size: 1.85rem;
+    line-height: 1; color: #fff; letter-spacing: -.5px;
+    display: flex; align-items: center;
+  }
+  .logo-wordmark svg { height: .96em; margin: 0 2px; display: block; }
+  .logo-sm .logo-wordmark { font-size: 1.2rem; }
+  .logo-sm .tagline { font-size: .48rem; letter-spacing: 2px; }
   .brand .sub {
-    border-left: 2px solid var(--roxo-vivo);
+    border-left: 2px solid rgba(216,192,240,.55);
     padding-left: 16px;
-    font-size: .95rem; letter-spacing: 2.5px; text-transform: uppercase;
-    color: var(--lavanda); font-weight: 300;
+    font-size: .9rem; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--lavanda); font-weight: 400;
   }
   .header-right { display: flex; align-items: center; gap: 16px; font-size: .85rem; z-index: 1; color: var(--lavanda); }
   .live-dot {
@@ -73,7 +88,7 @@
 
   /* Destaque próximo evento */
   .proximo {
-    background: linear-gradient(120deg, var(--roxo-profundo), #4a1a7a);
+    background: linear-gradient(120deg, #2E0B5E, #6E00A8);
     color: #fff; border-radius: 12px; padding: 20px 24px; margin-bottom: 26px;
     display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;
     box-shadow: 0 2px 8px rgba(39,0,71,.25);
@@ -146,7 +161,7 @@
   /* ===== Footer — faixa roxo profundo com logo, Modelo Netway ===== */
   footer {
     position: relative;
-    background: var(--roxo-profundo);
+    background: linear-gradient(135deg, #2E0B5E 0%, #4B1490 60%, #6E00A8 100%);
     color: var(--lavanda);
     padding: 18px 36px;
     display: flex; align-items: center; justify-content: space-between;
@@ -162,7 +177,21 @@
 <body>
 <header>
   <div class="brand">
-    <img src="logo_netway.png" alt="Grupo Netway">
+    <div class="logo-block">
+      <div class="tagline">Mais que internet. É</div>
+      <div class="logo-wordmark">net<svg viewBox="0 0 104 92" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="gw" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#A855F7"/>
+            <stop offset=".55" stop-color="#8E2DE2"/>
+            <stop offset="1" stop-color="#5C0DA8"/>
+          </linearGradient>
+        </defs>
+        <circle cx="16" cy="17" r="13" fill="url(#gw)"/>
+        <path d="M6 46 Q17 32 27 44 L39 74 Q45 86 53 74 L65 42 Q73 27 86 36 L97 22"
+              fill="none" stroke="url(#gw)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>ay</div>
+    </div>
     <div class="sub">Eventos para Provedores · 2026</div>
   </div>
   <div class="header-right">
@@ -170,9 +199,9 @@
     <span id="ultima">—</span>
   </div>
   <svg class="ribbons" viewBox="0 0 480 110" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
-    <path d="M480,-20 C360,10 330,95 420,130 C470,148 500,90 480,-20 Z" fill="#9B57E9" opacity=".85"/>
-    <path d="M430,-30 C330,-5 305,80 375,120 C300,105 285,20 355,-30 Z" fill="#D9C2F5" opacity=".55"/>
-    <path d="M480,40 C430,55 425,95 465,115 L480,115 Z" fill="#7A3BC4" opacity=".9"/>
+    <path d="M480,-20 C360,10 330,95 420,130 C470,148 500,90 480,-20 Z" fill="#8E2DE2" opacity=".55"/>
+    <path d="M430,-30 C330,-5 305,80 375,120 C300,105 285,20 355,-30 Z" fill="#D8C0F0" opacity=".35"/>
+    <path d="M480,40 C430,55 425,95 465,115 L480,115 Z" fill="#A855F7" opacity=".65"/>
   </svg>
 </header>
 <main>
@@ -254,11 +283,25 @@
   </div>
 </main>
 <footer>
-  <img src="logo_netway.png" alt="Netway">
+  <div class="logo-block logo-sm">
+    <div class="tagline">Mais que internet. É</div>
+    <div class="logo-wordmark">net<svg viewBox="0 0 104 92" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="gw2" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#A855F7"/>
+          <stop offset=".55" stop-color="#8E2DE2"/>
+          <stop offset="1" stop-color="#5C0DA8"/>
+        </linearGradient>
+      </defs>
+      <circle cx="16" cy="17" r="13" fill="url(#gw2)"/>
+      <path d="M6 46 Q17 32 27 44 L39 74 Q45 86 53 74 L65 42 Q73 27 86 36 L97 22"
+            fill="none" stroke="url(#gw2)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>ay</div>
+  </div>
   <div class="info">Painel Netway · edite <strong>dados.json</strong> e o painel atualiza sozinho a cada 5 segundos</div>
   <svg class="ribbons" viewBox="0 0 380 66" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
-    <path d="M380,70 C300,60 280,10 340,-10 C380,-22 400,30 380,70 Z" fill="#9B57E9" opacity=".8"/>
-    <path d="M330,75 C270,60 260,20 300,0 C250,15 245,60 295,80 Z" fill="#D9C2F5" opacity=".45"/>
+    <path d="M380,70 C300,60 280,10 340,-10 C380,-22 400,30 380,70 Z" fill="#8E2DE2" opacity=".5"/>
+    <path d="M330,75 C270,60 260,20 300,0 C250,15 245,60 295,80 Z" fill="#D8C0F0" opacity=".3"/>
   </svg>
 </footer>
 
