@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "28/07/2026",
+  "ultimaAtualizacao": "06/08/2026",
   "eventos": [
     { "nome": "ExpoISP Expedição — RO", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-16", "fim": "2026-01-16", "cidade": "Porto Velho – RO", "local": "" },
     { "nome": "ExpoISP Expedição — AL", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-28", "fim": "2026-01-28", "cidade": "Maceió – AL", "local": "" },
@@ -37,9 +37,9 @@
     { "nome": "InterISP São Luís", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-07-02", "fim": "2026-07-02", "cidade": "São Luís – MA", "local": "" },
     { "nome": "EXPOISP Brasil 2026 — Edição 10 anos", "categoria": "nacional", "serie": "Principal", "inicio": "2026-07-15", "fim": "2026-07-17", "cidade": "Recife – PE", "local": "Recife Expo Center" },
     { "nome": "ISP Meeting Vitória", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-07-22", "fim": "2026-07-22", "cidade": "Vitória – ES", "local": "Av. Saturnino de Brito" },
-    { "nome": "ISP Meeting Belém", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-12", "fim": "2026-08-12", "cidade": "Belém – PA", "local": "Av. Duque de Caxias" },
-    { "nome": "ISP Meeting Feira de Santana", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-19", "fim": "2026-08-19", "cidade": "Feira de Santana – BA", "local": "" },
-    { "nome": "ISP Meeting São José do Rio Preto", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-26", "fim": "2026-08-26", "cidade": "São José do Rio Preto – SP", "local": "" },
+    { "nome": "ISP Meeting Belém", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-12", "fim": "2026-08-12", "cidade": "Belém – PA", "local": "Ibis Styles Hangar Belém" },
+    { "nome": "ISP Meeting Feira de Santana", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-19", "fim": "2026-08-19", "cidade": "Feira de Santana – BA", "local": "Ibis Feira de Santana" },
+    { "nome": "ISP Meeting São José do Rio Preto", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-26", "fim": "2026-08-26", "cidade": "São José do Rio Preto – SP", "local": "Ipê Park Hotel" },
     { "nome": "InterISP Juazeiro do Norte", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-08-20", "fim": "2026-08-20", "cidade": "Juazeiro do Norte – CE", "local": "" },
     { "nome": "LinkISP 2026 (InternetSul) — maior evento de provedores do Sul", "categoria": "nacional", "serie": "Principal", "inicio": "2026-08-27", "fim": "2026-08-28", "cidade": "Gramado – RS", "local": "Serra Park" },
     { "nome": "ISP Meeting Petrolina", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-09-16", "fim": "2026-09-16", "cidade": "Petrolina – PE", "local": "" },
