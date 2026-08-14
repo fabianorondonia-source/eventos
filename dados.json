@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "07/08/2026",
+  "ultimaAtualizacao": "14/08/2026",
   "eventos": [
     { "nome": "ExpoISP Expedição — RO", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-16", "fim": "2026-01-16", "cidade": "Porto Velho – RO", "local": "" },
     { "nome": "ExpoISP Expedição — AL", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-28", "fim": "2026-01-28", "cidade": "Maceió – AL", "local": "" },
@@ -60,6 +60,7 @@
     { "nome": "Wireless Mundi 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-11-12", "fim": "2026-11-12", "cidade": "São Paulo – SP", "local": "" },
     { "nome": "ISP Meeting Brasília", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-11-25", "fim": "2026-11-25", "cidade": "Brasília – DF", "local": "" },
     { "nome": "InterISP Marabá", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-11-26", "fim": "2026-11-26", "cidade": "Marabá – PA", "local": "" },
+    { "nome": "Conexão ISP 2026 (3ª edição)", "categoria": "nacional", "serie": "Principal", "inicio": "2026-04-24", "fim": "2026-04-24", "cidade": "São José do Rio Preto – SP", "local": "" },
 
     { "nome": "CONGERHI 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-03-20", "fim": "2026-03-21", "cidade": "Bauru – SP", "local": "Alameda Rodoserv Center" },
     { "nome": "RH Leadership Festival 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-03-26", "fim": "2026-03-27", "cidade": "São Paulo – SP", "local": "Distrito Anhembi" },
