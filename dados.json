@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "14/08/2026",
+  "ultimaAtualizacao": "20/08/2026",
   "eventos": [
     { "nome": "ExpoISP Expedição — RO", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-16", "fim": "2026-01-16", "cidade": "Porto Velho – RO", "local": "" },
     { "nome": "ExpoISP Expedição — AL", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-28", "fim": "2026-01-28", "cidade": "Maceió – AL", "local": "" },
@@ -48,6 +48,7 @@
     { "nome": "Futurecom 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-10-06", "fim": "2026-10-08", "cidade": "São Paulo – SP", "local": "São Paulo Expo" },
     { "nome": "Network X 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-10-13", "fim": "2026-10-15", "cidade": "Viena, Áustria", "local": "VIECON – Vienna Congress Center" },
     { "nome": "ISP Meeting Rio de Janeiro", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-10-14", "fim": "2026-10-14", "cidade": "Rio de Janeiro – RJ", "local": "" },
+    { "nome": "ISP Meeting Teixeira de Freitas", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-10-14", "fim": "2026-10-14", "cidade": "Teixeira de Freitas – BA", "local": "" },
     { "nome": "LACNIC 46 / LACNOG 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-10-19", "fim": "2026-10-22", "cidade": "Mendoza, Argentina", "local": "" },
     { "nome": "ISP Meeting Ribeirão Preto (2ª ed.)", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-10-21", "fim": "2026-10-21", "cidade": "Ribeirão Preto – SP", "local": "" },
     { "nome": "InterISP Rio de Janeiro", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-10-22", "fim": "2026-10-22", "cidade": "Rio de Janeiro – RJ", "local": "" },
