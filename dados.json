@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "20/08/2026",
+  "ultimaAtualizacao": "23/08/2026",
   "eventos": [
     { "nome": "ExpoISP Expedição — RO", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-16", "fim": "2026-01-16", "cidade": "Porto Velho – RO", "local": "" },
     { "nome": "ExpoISP Expedição — AL", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-28", "fim": "2026-01-28", "cidade": "Maceió – AL", "local": "" },
@@ -22,6 +22,7 @@
     { "nome": "InterISP Goiânia", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-04-16", "fim": "2026-04-16", "cidade": "Goiânia – GO", "local": "" },
     { "nome": "ISP Meeting Castanhal", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-05-05", "fim": "2026-05-05", "cidade": "Castanhal – PA", "local": "" },
     { "nome": "Abrint Global Congress 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-05-06", "fim": "2026-05-08", "cidade": "São Paulo – SP", "local": "Distrito Anhembi" },
+    { "nome": "FutureISP 2026 (4ª edição)", "categoria": "nacional", "serie": "Principal", "inicio": "2026-05-08", "fim": "2026-05-10", "cidade": "Olinda – PE", "local": "" },
     { "nome": "ExpoISP Expedição — AC", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-05-14", "fim": "2026-05-14", "cidade": "Rio Branco – AC", "local": "" },
     { "nome": "Fiber Connect 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-05-17", "fim": "2026-05-20", "cidade": "Orlando (FL), EUA", "local": "Gaylord Palms Resort" },
     { "nome": "ITW 2026 — International Telecoms Week", "categoria": "internacional", "serie": "Principal", "inicio": "2026-05-18", "fim": "2026-05-21", "cidade": "National Harbor (MD), EUA", "local": "Gaylord National Resort" },
