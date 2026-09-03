@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "29/08/2026",
+  "ultimaAtualizacao": "03/09/2026",
   "eventos": [
     { "nome": "ExpoISP Expedição — RO", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-16", "fim": "2026-01-16", "cidade": "Porto Velho – RO", "local": "" },
     { "nome": "ExpoISP Expedição — AL", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-28", "fim": "2026-01-28", "cidade": "Maceió – AL", "local": "" },
@@ -43,7 +43,7 @@
     { "nome": "ISP Meeting São José do Rio Preto", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-26", "fim": "2026-08-26", "cidade": "São José do Rio Preto – SP", "local": "Ipê Park Hotel" },
     { "nome": "InterISP Juazeiro do Norte", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-08-20", "fim": "2026-08-20", "cidade": "Juazeiro do Norte – CE", "local": "" },
     { "nome": "LinkISP 2026 (InternetSul) — maior evento de provedores do Sul", "categoria": "nacional", "serie": "Principal", "inicio": "2026-08-27", "fim": "2026-08-28", "cidade": "Gramado – RS", "local": "Serra Park" },
-    { "nome": "ISP Meeting Petrolina", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-09-16", "fim": "2026-09-16", "cidade": "Petrolina – PE", "local": "" },
+    { "nome": "ISP Meeting Petrolina", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-09-16", "fim": "2026-09-16", "cidade": "Petrolina – PE", "local": "Avenida das Nações" },
     { "nome": "InterISP Imperatriz", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-09-17", "fim": "2026-09-17", "cidade": "Imperatriz – MA", "local": "" },
     { "nome": "Futurecom 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-10-06", "fim": "2026-10-08", "cidade": "São Paulo – SP", "local": "São Paulo Expo" },
     { "nome": "Network X 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-10-13", "fim": "2026-10-15", "cidade": "Viena, Áustria", "local": "VIECON – Vienna Congress Center" },
@@ -58,7 +58,7 @@
     { "nome": "Web Summit 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-11-09", "fim": "2026-11-12", "cidade": "Lisboa, Portugal", "local": "" },
     { "nome": "ISP Meeting Santarém", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-11-11", "fim": "2026-11-11", "cidade": "Santarém – PA", "local": "" },
     { "nome": "Wireless Mundi 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-11-12", "fim": "2026-11-12", "cidade": "São Paulo – SP", "local": "" },
-    { "nome": "ISP Meeting Brasília", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-11-25", "fim": "2026-11-25", "cidade": "Brasília – DF", "local": "" },
+    { "nome": "ISP Meeting Brasília", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-12-09", "fim": "2026-12-09", "cidade": "Brasília – DF", "local": "" },
     { "nome": "InterISP Marabá", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-11-26", "fim": "2026-11-26", "cidade": "Marabá – PA", "local": "" },
     { "nome": "Conexão ISP 2026 (3ª edição)", "categoria": "nacional", "serie": "Principal", "inicio": "2026-04-24", "fim": "2026-04-24", "cidade": "São José do Rio Preto – SP", "local": "" },
 
