@@ -1,88 +1,745 @@
 {
-  "ultimaAtualizacao": "14/09/2026",
+  "ultimaAtualizacao": "24/09/2026",
   "eventos": [
-    { "nome": "ExpoISP Expedição — RO", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-16", "fim": "2026-01-16", "cidade": "Porto Velho – RO", "local": "" },
-    { "nome": "ExpoISP Expedição — AL", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-01-28", "fim": "2026-01-28", "cidade": "Maceió – AL", "local": "" },
-    { "nome": "InterISP Curitiba", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-02-05", "fim": "2026-02-05", "cidade": "Curitiba – PR", "local": "" },
-    { "nome": "ExpoISP Expedição — MT", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-02-11", "fim": "2026-02-11", "cidade": "Cuiabá – MT", "local": "" },
-    { "nome": "ExpoISP Expedição — PA", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-02-16", "fim": "2026-02-16", "cidade": "Belém – PA", "local": "" },
-    { "nome": "MWC Barcelona 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-03-02", "fim": "2026-03-05", "cidade": "Barcelona, Espanha", "local": "Fira Gran Via" },
-    { "nome": "WISPAMERICA / ISPAMERICA 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-03-02", "fim": "2026-03-05", "cidade": "Atlanta (GA), EUA", "local": "Renaissance Atlanta Waverly" },
-    { "nome": "InterISP Vitória", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-03-05", "fim": "2026-03-06", "cidade": "Vitória – ES", "local": "" },
-    { "nome": "ExpoISP Expedição — RJ", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-03-05", "fim": "2026-03-06", "cidade": "Rio de Janeiro – RJ", "local": "" },
-    { "nome": "InterISP Teresina", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-03-12", "fim": "2026-03-13", "cidade": "Teresina – PI", "local": "" },
-    { "nome": "iBusiness 2026 (RedeTelesul)", "categoria": "nacional", "serie": "Principal", "inicio": "2026-03-12", "fim": "2026-03-13", "cidade": "Foz do Iguaçu – PR", "local": "Rafain Palace Hotel" },
-    { "nome": "Capacity LATAM 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-03-16", "fim": "2026-03-18", "cidade": "São Paulo – SP (Brasil)", "local": "Grand Hyatt São Paulo" },
-    { "nome": "ExpoISP Expedição — PB", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-03-26", "fim": "2026-03-26", "cidade": "João Pessoa – PB", "local": "" },
-    { "nome": "ISP Meeting Campos dos Goytacazes", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-03-27", "fim": "2026-03-27", "cidade": "Campos dos Goytacazes – RJ", "local": "" },
-    { "nome": "Abramulti 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-04-08", "fim": "2026-04-09", "cidade": "Belo Horizonte – MG", "local": "" },
-    { "nome": "ISP Meeting Ribeirão Preto", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-04-08", "fim": "2026-04-09", "cidade": "Ribeirão Preto – SP", "local": "" },
-    { "nome": "Fórum de Operadoras Inovadoras 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-04-14", "fim": "2026-04-14", "cidade": "São Paulo – SP", "local": "WTC São Paulo" },
-    { "nome": "FTTH Conference 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-04-14", "fim": "2026-04-16", "cidade": "Londres, Reino Unido", "local": "ExCeL London" },
-    { "nome": "InterISP Goiânia", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-04-16", "fim": "2026-04-16", "cidade": "Goiânia – GO", "local": "" },
-    { "nome": "ISP Meeting Castanhal", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-05-05", "fim": "2026-05-05", "cidade": "Castanhal – PA", "local": "" },
-    { "nome": "Abrint Global Congress 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-05-06", "fim": "2026-05-08", "cidade": "São Paulo – SP", "local": "Distrito Anhembi" },
-    { "nome": "FutureISP 2026 (4ª edição)", "categoria": "nacional", "serie": "Principal", "inicio": "2026-05-08", "fim": "2026-05-10", "cidade": "Olinda – PE", "local": "" },
-    { "nome": "ExpoISP Expedição — AC", "categoria": "nacional", "serie": "ExpoISP", "inicio": "2026-05-14", "fim": "2026-05-14", "cidade": "Rio Branco – AC", "local": "" },
-    { "nome": "Fiber Connect 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-05-17", "fim": "2026-05-20", "cidade": "Orlando (FL), EUA", "local": "Gaylord Palms Resort" },
-    { "nome": "ITW 2026 — International Telecoms Week", "categoria": "internacional", "serie": "Principal", "inicio": "2026-05-18", "fim": "2026-05-21", "cidade": "National Harbor (MD), EUA", "local": "Gaylord National Resort" },
-    { "nome": "ANGA COM 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-05-19", "fim": "2026-05-21", "cidade": "Colônia, Alemanha", "local": "Koelnmesse" },
-    { "nome": "ISP Meeting Fortaleza", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-05-20", "fim": "2026-05-20", "cidade": "Fortaleza – CE", "local": "" },
-    { "nome": "InterISP Belém", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-05-21", "fim": "2026-05-21", "cidade": "Belém – PA", "local": "" },
-    { "nome": "ISP Meeting Curitiba", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-05-28", "fim": "2026-05-28", "cidade": "Curitiba – PR", "local": "" },
-    { "nome": "ISP Meeting Araguaína", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-06-03", "fim": "2026-06-03", "cidade": "Araguaína – TO", "local": "" },
-    { "nome": "ISP Meeting Goiânia", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-06-16", "fim": "2026-06-16", "cidade": "Goiânia – GO", "local": "" },
-    { "nome": "InterISP Sobral", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-06-18", "fim": "2026-06-18", "cidade": "Sobral – CE", "local": "" },
-    { "nome": "ISP Meeting Belo Horizonte", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-06-24", "fim": "2026-06-24", "cidade": "Belo Horizonte – MG", "local": "" },
-    { "nome": "ISP Meeting Cuiabá", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-07-01", "fim": "2026-07-01", "cidade": "Cuiabá – MT", "local": "" },
-    { "nome": "InterISP São Luís", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-07-02", "fim": "2026-07-02", "cidade": "São Luís – MA", "local": "" },
-    { "nome": "EXPOISP Brasil 2026 — Edição 10 anos", "categoria": "nacional", "serie": "Principal", "inicio": "2026-07-15", "fim": "2026-07-17", "cidade": "Recife – PE", "local": "Recife Expo Center" },
-    { "nome": "ISP Meeting Vitória", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-07-22", "fim": "2026-07-22", "cidade": "Vitória – ES", "local": "Av. Saturnino de Brito" },
-    { "nome": "ISP Meeting Belém", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-12", "fim": "2026-08-12", "cidade": "Belém – PA", "local": "Ibis Styles Hangar Belém" },
-    { "nome": "ISP Meeting Feira de Santana", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-19", "fim": "2026-08-19", "cidade": "Feira de Santana – BA", "local": "Ibis Feira de Santana" },
-    { "nome": "ISP Meeting São José do Rio Preto", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-08-26", "fim": "2026-08-26", "cidade": "São José do Rio Preto – SP", "local": "Ipê Park Hotel" },
-    { "nome": "InterISP Juazeiro do Norte", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-08-20", "fim": "2026-08-20", "cidade": "Juazeiro do Norte – CE", "local": "" },
-    { "nome": "LinkISP 2026 (InternetSul) — maior evento de provedores do Sul", "categoria": "nacional", "serie": "Principal", "inicio": "2026-08-27", "fim": "2026-08-28", "cidade": "Gramado – RS", "local": "Serra Park" },
-    { "nome": "ISP Meeting Petrolina", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-09-16", "fim": "2026-09-16", "cidade": "Petrolina – PE", "local": "Avenida das Nações" },
-    { "nome": "InterISP Imperatriz", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-09-17", "fim": "2026-09-17", "cidade": "Imperatriz – MA", "local": "" },
-    { "nome": "Futurecom 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-10-06", "fim": "2026-10-08", "cidade": "São Paulo – SP", "local": "São Paulo Expo" },
-    { "nome": "Network X 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-10-13", "fim": "2026-10-15", "cidade": "Viena, Áustria", "local": "VIECON – Vienna Congress Center" },
-    { "nome": "ISP Meeting Rio de Janeiro", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-11-18", "fim": "2026-11-18", "cidade": "Rio de Janeiro – RJ", "local": "Grand Mercure Rio de Janeiro Copacabana – R. Souza Lima" },
-    { "nome": "ISP Meeting Teixeira de Freitas", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-10-14", "fim": "2026-10-14", "cidade": "Teixeira de Freitas – BA", "local": "Edifício Dona Mary – R. Águas Claras" },
-    { "nome": "LACNIC 46 / LACNOG 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-10-19", "fim": "2026-10-22", "cidade": "Mendoza, Argentina", "local": "" },
-    { "nome": "ISP Meeting Ribeirão Preto (2ª ed.)", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-10-21", "fim": "2026-10-21", "cidade": "Ribeirão Preto – SP", "local": "Taiwan Hotel – R. Lafaiete" },
-    { "nome": "InterISP Rio de Janeiro", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-10-22", "fim": "2026-10-22", "cidade": "Rio de Janeiro – RJ", "local": "" },
-    { "nome": "Apronet 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-10-28", "fim": "2026-10-29", "cidade": "Florianópolis – SC", "local": "Costão do Santinho Resort" },
-    { "nome": "Abrint Nordeste 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-11-05", "fim": "2026-11-06", "cidade": "Fortaleza – CE", "local": "Centro de Eventos do Ceará" },
-    { "nome": "WISPAPALOOZA 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-11-02", "fim": "2026-11-05", "cidade": "Las Vegas (NV), EUA", "local": "Caesars Palace" },
-    { "nome": "Web Summit 2026", "categoria": "internacional", "serie": "Principal", "inicio": "2026-11-09", "fim": "2026-11-12", "cidade": "Lisboa, Portugal", "local": "" },
-    { "nome": "ISP Meeting Santarém", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-11-11", "fim": "2026-11-11", "cidade": "Santarém – PA", "local": "Hotel London Santarém – R. Lameira Bittencourt" },
-    { "nome": "Wireless Mundi 2026", "categoria": "nacional", "serie": "Principal", "inicio": "2026-11-12", "fim": "2026-11-12", "cidade": "São Paulo – SP", "local": "" },
-    { "nome": "ISP Meeting Brasília", "categoria": "nacional", "serie": "ISP Meeting", "inicio": "2026-12-09", "fim": "2026-12-09", "cidade": "Brasília – DF", "local": "Brasília Imperial Hotel – St. Hoteleiro Sul Q. 3, Asa Sul" },
-    { "nome": "InterISP Marabá", "categoria": "nacional", "serie": "InterISP", "inicio": "2026-11-26", "fim": "2026-11-26", "cidade": "Marabá – PA", "local": "" },
-    { "nome": "Conexão ISP 2026 (3ª edição)", "categoria": "nacional", "serie": "Principal", "inicio": "2026-04-24", "fim": "2026-04-24", "cidade": "São José do Rio Preto – SP", "local": "" },
-
-    { "nome": "CONGERHI 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-03-20", "fim": "2026-03-21", "cidade": "Bauru – SP", "local": "Alameda Rodoserv Center" },
-    { "nome": "RH Leadership Festival 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-03-26", "fim": "2026-03-27", "cidade": "São Paulo – SP", "local": "Distrito Anhembi" },
-    { "nome": "RH Summit 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-05-05", "fim": "2026-05-06", "cidade": "São Paulo – SP", "local": "Expo Center Norte" },
-    { "nome": "RHRio 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-05-12", "fim": "2026-05-13", "cidade": "Rio de Janeiro – RJ", "local": "Marina da Glória" },
-    { "nome": "Senior Experience 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-05-21", "fim": "2026-05-21", "cidade": "São Paulo – SP", "local": "Transamerica Expo Center" },
-    { "nome": "CONCARH 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-07-09", "fim": "2026-07-10", "cidade": "Florianópolis – SC", "local": "CentroSul" },
-    { "nome": "CONARH 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-08-18", "fim": "2026-08-20", "cidade": "São Paulo – SP", "local": "São Paulo Expo" },
-    { "nome": "CONGREGARH 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-09-30", "fim": "2026-10-02", "cidade": "Porto Alegre – RS", "local": "Centro de Eventos PUCRS" },
-    { "nome": "W6 Brasil HR Summit 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-10-06", "fim": "2026-10-06", "cidade": "São Paulo – SP", "local": "Nacional Inn Jaraguá" },
-    { "nome": "People & Health Executive Summit 2026", "categoria": "nacional", "serie": "Principal", "setor": "rh", "inicio": "2026-10-21", "fim": "2026-10-21", "cidade": "São Paulo – SP", "local": "WTC Events Center" },
-
-    { "nome": "M&A Connect 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-04-23", "fim": "2026-04-23", "cidade": "São Paulo – SP", "local": "WTC Events Center" },
-    { "nome": "Latin Lawyer Live: Mergers and Acquisitions 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-06-17", "fim": "2026-06-17", "cidade": "São Paulo – SP", "local": "Rosewood São Paulo" },
-    { "nome": "ABVCAP VC Day 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-09-16", "fim": "2026-09-16", "cidade": "São Paulo – SP", "local": "" },
-    { "nome": "ABVCAP Experience 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-09-21", "fim": "2026-09-23", "cidade": "São Paulo – SP", "local": "" },
-    { "nome": "Private Equity Latin America Forum 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-12-01", "fim": "2026-12-02", "cidade": "São Paulo – SP", "local": "" },
-    { "nome": "Latin Lawyer M&A Conference 2026", "categoria": "nacional", "serie": "Principal", "setor": "ma", "inicio": "2026-12-03", "fim": "2026-12-03", "cidade": "São Paulo – SP", "local": "" },
-
-    { "nome": "Fortinet Accelerate 2026", "categoria": "internacional", "serie": "Principal", "setor": "ciber", "inicio": "2026-03-09", "fim": "2026-03-13", "cidade": "Las Vegas (NV), EUA", "local": "Mandalay Bay Convention Center" },
-    { "nome": "Fortinet Cybersecurity Summit Brasil 2026", "categoria": "nacional", "serie": "Principal", "setor": "ciber", "inicio": "2026-08-11", "fim": "2026-08-11", "cidade": "São Paulo – SP", "local": "Transamerica Expo Center" },
-    { "nome": "Fortinet XPERTS Summit 2026 (Americas)", "categoria": "internacional", "serie": "Principal", "setor": "ciber", "inicio": "2026-11-09", "fim": "2026-11-14", "cidade": "Nashville (TN), EUA", "local": "Gaylord Opryland Resort" },
-    { "nome": "Fortinet XPERTS Summit 2026 (EMEA)", "categoria": "internacional", "serie": "Principal", "setor": "ciber", "inicio": "2026-07-06", "fim": "2026-07-11", "cidade": "Madri, Espanha", "local": "Meliá Castilla" }
+    {
+      "nome": "ExpoISP Expedição — RO",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-01-16",
+      "fim": "2026-01-16",
+      "cidade": "Porto Velho – RO",
+      "local": ""
+    },
+    {
+      "nome": "ExpoISP Expedição — AL",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-01-28",
+      "fim": "2026-01-28",
+      "cidade": "Maceió – AL",
+      "local": ""
+    },
+    {
+      "nome": "InterISP Curitiba",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-02-05",
+      "fim": "2026-02-05",
+      "cidade": "Curitiba – PR",
+      "local": ""
+    },
+    {
+      "nome": "ExpoISP Expedição — MT",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-02-11",
+      "fim": "2026-02-11",
+      "cidade": "Cuiabá – MT",
+      "local": ""
+    },
+    {
+      "nome": "ExpoISP Expedição — PA",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-02-16",
+      "fim": "2026-02-16",
+      "cidade": "Belém – PA",
+      "local": ""
+    },
+    {
+      "nome": "MWC Barcelona 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-03-02",
+      "fim": "2026-03-05",
+      "cidade": "Barcelona, Espanha",
+      "local": "Fira Gran Via"
+    },
+    {
+      "nome": "WISPAMERICA / ISPAMERICA 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-03-02",
+      "fim": "2026-03-05",
+      "cidade": "Atlanta (GA), EUA",
+      "local": "Renaissance Atlanta Waverly"
+    },
+    {
+      "nome": "InterISP Vitória",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-03-05",
+      "fim": "2026-03-06",
+      "cidade": "Vitória – ES",
+      "local": ""
+    },
+    {
+      "nome": "ExpoISP Expedição — RJ",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-03-05",
+      "fim": "2026-03-06",
+      "cidade": "Rio de Janeiro – RJ",
+      "local": ""
+    },
+    {
+      "nome": "InterISP Teresina",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-03-12",
+      "fim": "2026-03-13",
+      "cidade": "Teresina – PI",
+      "local": ""
+    },
+    {
+      "nome": "iBusiness 2026 (RedeTelesul)",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-03-12",
+      "fim": "2026-03-13",
+      "cidade": "Foz do Iguaçu – PR",
+      "local": "Rafain Palace Hotel"
+    },
+    {
+      "nome": "Capacity LATAM 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-03-16",
+      "fim": "2026-03-18",
+      "cidade": "São Paulo – SP (Brasil)",
+      "local": "Grand Hyatt São Paulo"
+    },
+    {
+      "nome": "ExpoISP Expedição — PB",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-03-26",
+      "fim": "2026-03-26",
+      "cidade": "João Pessoa – PB",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Campos dos Goytacazes",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-03-27",
+      "fim": "2026-03-27",
+      "cidade": "Campos dos Goytacazes – RJ",
+      "local": ""
+    },
+    {
+      "nome": "Abramulti 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-04-08",
+      "fim": "2026-04-09",
+      "cidade": "Belo Horizonte – MG",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Ribeirão Preto",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-04-08",
+      "fim": "2026-04-09",
+      "cidade": "Ribeirão Preto – SP",
+      "local": ""
+    },
+    {
+      "nome": "Fórum de Operadoras Inovadoras 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-04-14",
+      "fim": "2026-04-14",
+      "cidade": "São Paulo – SP",
+      "local": "WTC São Paulo"
+    },
+    {
+      "nome": "FTTH Conference 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-04-14",
+      "fim": "2026-04-16",
+      "cidade": "Londres, Reino Unido",
+      "local": "ExCeL London"
+    },
+    {
+      "nome": "InterISP Goiânia",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-04-16",
+      "fim": "2026-04-16",
+      "cidade": "Goiânia – GO",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Castanhal",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-05-05",
+      "fim": "2026-05-05",
+      "cidade": "Castanhal – PA",
+      "local": ""
+    },
+    {
+      "nome": "Abrint Global Congress 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-05-06",
+      "fim": "2026-05-08",
+      "cidade": "São Paulo – SP",
+      "local": "Distrito Anhembi"
+    },
+    {
+      "nome": "FutureISP 2026 (4ª edição)",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-05-08",
+      "fim": "2026-05-10",
+      "cidade": "Olinda – PE",
+      "local": ""
+    },
+    {
+      "nome": "ExpoISP Expedição — AC",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-05-14",
+      "fim": "2026-05-14",
+      "cidade": "Rio Branco – AC",
+      "local": ""
+    },
+    {
+      "nome": "Fiber Connect 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-05-17",
+      "fim": "2026-05-20",
+      "cidade": "Orlando (FL), EUA",
+      "local": "Gaylord Palms Resort"
+    },
+    {
+      "nome": "ITW 2026 — International Telecoms Week",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-05-18",
+      "fim": "2026-05-21",
+      "cidade": "National Harbor (MD), EUA",
+      "local": "Gaylord National Resort"
+    },
+    {
+      "nome": "ANGA COM 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-05-19",
+      "fim": "2026-05-21",
+      "cidade": "Colônia, Alemanha",
+      "local": "Koelnmesse"
+    },
+    {
+      "nome": "ISP Meeting Fortaleza",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-05-20",
+      "fim": "2026-05-20",
+      "cidade": "Fortaleza – CE",
+      "local": ""
+    },
+    {
+      "nome": "InterISP Belém",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-05-21",
+      "fim": "2026-05-21",
+      "cidade": "Belém – PA",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Curitiba",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-05-28",
+      "fim": "2026-05-28",
+      "cidade": "Curitiba – PR",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Araguaína",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-06-03",
+      "fim": "2026-06-03",
+      "cidade": "Araguaína – TO",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Goiânia",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-06-16",
+      "fim": "2026-06-16",
+      "cidade": "Goiânia – GO",
+      "local": ""
+    },
+    {
+      "nome": "InterISP Sobral",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-06-18",
+      "fim": "2026-06-18",
+      "cidade": "Sobral – CE",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Belo Horizonte",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-06-24",
+      "fim": "2026-06-24",
+      "cidade": "Belo Horizonte – MG",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Cuiabá",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-07-01",
+      "fim": "2026-07-01",
+      "cidade": "Cuiabá – MT",
+      "local": ""
+    },
+    {
+      "nome": "InterISP São Luís",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-07-02",
+      "fim": "2026-07-02",
+      "cidade": "São Luís – MA",
+      "local": ""
+    },
+    {
+      "nome": "EXPOISP Brasil 2026 — Edição 10 anos",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-07-15",
+      "fim": "2026-07-17",
+      "cidade": "Recife – PE",
+      "local": "Recife Expo Center"
+    },
+    {
+      "nome": "ISP Meeting Vitória",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-07-22",
+      "fim": "2026-07-22",
+      "cidade": "Vitória – ES",
+      "local": "Av. Saturnino de Brito"
+    },
+    {
+      "nome": "ISP Meeting Belém",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-08-12",
+      "fim": "2026-08-12",
+      "cidade": "Belém – PA",
+      "local": "Ibis Styles Hangar Belém"
+    },
+    {
+      "nome": "ISP Meeting Feira de Santana",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-08-19",
+      "fim": "2026-08-19",
+      "cidade": "Feira de Santana – BA",
+      "local": "Ibis Feira de Santana"
+    },
+    {
+      "nome": "ISP Meeting São José do Rio Preto",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-08-26",
+      "fim": "2026-08-26",
+      "cidade": "São José do Rio Preto – SP",
+      "local": "Ipê Park Hotel"
+    },
+    {
+      "nome": "InterISP Juazeiro do Norte",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-08-20",
+      "fim": "2026-08-20",
+      "cidade": "Juazeiro do Norte – CE",
+      "local": ""
+    },
+    {
+      "nome": "LinkISP 2026 (InternetSul) — maior evento de provedores do Sul",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-08-27",
+      "fim": "2026-08-28",
+      "cidade": "Gramado – RS",
+      "local": "Serra Park"
+    },
+    {
+      "nome": "ISP Meeting Petrolina",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-09-16",
+      "fim": "2026-09-16",
+      "cidade": "Petrolina – PE",
+      "local": "Avenida das Nações"
+    },
+    {
+      "nome": "InterISP Imperatriz",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-09-17",
+      "fim": "2026-09-17",
+      "cidade": "Imperatriz – MA",
+      "local": ""
+    },
+    {
+      "nome": "Futurecom 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-10-06",
+      "fim": "2026-10-08",
+      "cidade": "São Paulo – SP",
+      "local": "São Paulo Expo"
+    },
+    {
+      "nome": "Network X 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-10-13",
+      "fim": "2026-10-15",
+      "cidade": "Viena, Áustria",
+      "local": "VIECON – Vienna Congress Center"
+    },
+    {
+      "nome": "ISP Meeting Rio de Janeiro",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-11-18",
+      "fim": "2026-11-18",
+      "cidade": "Rio de Janeiro – RJ",
+      "local": "Grand Mercure Rio de Janeiro Copacabana – R. Souza Lima"
+    },
+    {
+      "nome": "ISP Meeting Teixeira de Freitas",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-10-14",
+      "fim": "2026-10-14",
+      "cidade": "Teixeira de Freitas – BA",
+      "local": "Edifício Dona Mary – R. Águas Claras"
+    },
+    {
+      "nome": "LACNIC 46 / LACNOG 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-10-19",
+      "fim": "2026-10-22",
+      "cidade": "Mendoza, Argentina",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Ribeirão Preto (2ª ed.)",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-10-21",
+      "fim": "2026-10-21",
+      "cidade": "Ribeirão Preto – SP",
+      "local": "Taiwan Hotel – R. Lafaiete"
+    },
+    {
+      "nome": "InterISP Rio de Janeiro",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-10-22",
+      "fim": "2026-10-22",
+      "cidade": "Rio de Janeiro – RJ",
+      "local": ""
+    },
+    {
+      "nome": "Apronet 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-10-28",
+      "fim": "2026-10-29",
+      "cidade": "Florianópolis – SC",
+      "local": "Costão do Santinho Resort"
+    },
+    {
+      "nome": "Abrint Nordeste 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-11-05",
+      "fim": "2026-11-06",
+      "cidade": "Fortaleza – CE",
+      "local": "Centro de Eventos do Ceará"
+    },
+    {
+      "nome": "WISPAPALOOZA 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-11-02",
+      "fim": "2026-11-05",
+      "cidade": "Las Vegas (NV), EUA",
+      "local": "Caesars Palace"
+    },
+    {
+      "nome": "Web Summit 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-11-09",
+      "fim": "2026-11-12",
+      "cidade": "Lisboa, Portugal",
+      "local": ""
+    },
+    {
+      "nome": "ISP Meeting Santarém",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-11-11",
+      "fim": "2026-11-11",
+      "cidade": "Santarém – PA",
+      "local": "Hotel London Santarém – R. Lameira Bittencourt"
+    },
+    {
+      "nome": "Wireless Mundi 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-10-15",
+      "fim": "2026-10-15",
+      "cidade": "São Paulo – SP",
+      "local": "KPMG Events Space – R. Verbo Divino, 1400"
+    },
+    {
+      "nome": "ISP Meeting Brasília",
+      "categoria": "nacional",
+      "serie": "ISP Meeting",
+      "inicio": "2026-12-09",
+      "fim": "2026-12-09",
+      "cidade": "Brasília – DF",
+      "local": "Brasília Imperial Hotel – St. Hoteleiro Sul Q. 3, Asa Sul"
+    },
+    {
+      "nome": "InterISP Marabá",
+      "categoria": "nacional",
+      "serie": "InterISP",
+      "inicio": "2026-11-26",
+      "fim": "2026-11-26",
+      "cidade": "Marabá – PA",
+      "local": ""
+    },
+    {
+      "nome": "Conexão ISP 2026 (3ª edição)",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2026-04-24",
+      "fim": "2026-04-24",
+      "cidade": "São José do Rio Preto – SP",
+      "local": ""
+    },
+    {
+      "nome": "CONGERHI 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-03-20",
+      "fim": "2026-03-21",
+      "cidade": "Bauru – SP",
+      "local": "Alameda Rodoserv Center"
+    },
+    {
+      "nome": "RH Leadership Festival 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-03-26",
+      "fim": "2026-03-27",
+      "cidade": "São Paulo – SP",
+      "local": "Distrito Anhembi"
+    },
+    {
+      "nome": "RH Summit 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-05-05",
+      "fim": "2026-05-06",
+      "cidade": "São Paulo – SP",
+      "local": "Expo Center Norte"
+    },
+    {
+      "nome": "RHRio 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-05-12",
+      "fim": "2026-05-13",
+      "cidade": "Rio de Janeiro – RJ",
+      "local": "Marina da Glória"
+    },
+    {
+      "nome": "Senior Experience 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-05-21",
+      "fim": "2026-05-21",
+      "cidade": "São Paulo – SP",
+      "local": "Transamerica Expo Center"
+    },
+    {
+      "nome": "CONCARH 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-07-09",
+      "fim": "2026-07-10",
+      "cidade": "Florianópolis – SC",
+      "local": "CentroSul"
+    },
+    {
+      "nome": "CONARH 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-08-18",
+      "fim": "2026-08-20",
+      "cidade": "São Paulo – SP",
+      "local": "São Paulo Expo"
+    },
+    {
+      "nome": "CONGREGARH 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-09-30",
+      "fim": "2026-10-02",
+      "cidade": "Porto Alegre – RS",
+      "local": "Centro de Eventos PUCRS"
+    },
+    {
+      "nome": "W6 Brasil HR Summit 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-10-06",
+      "fim": "2026-10-06",
+      "cidade": "São Paulo – SP",
+      "local": "Nacional Inn Jaraguá"
+    },
+    {
+      "nome": "People & Health Executive Summit 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "rh",
+      "inicio": "2026-10-21",
+      "fim": "2026-10-21",
+      "cidade": "São Paulo – SP",
+      "local": "WTC Events Center"
+    },
+    {
+      "nome": "M&A Connect 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "ma",
+      "inicio": "2026-04-23",
+      "fim": "2026-04-23",
+      "cidade": "São Paulo – SP",
+      "local": "WTC Events Center"
+    },
+    {
+      "nome": "Latin Lawyer Live: Mergers and Acquisitions 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "ma",
+      "inicio": "2026-06-17",
+      "fim": "2026-06-17",
+      "cidade": "São Paulo – SP",
+      "local": "Rosewood São Paulo"
+    },
+    {
+      "nome": "ABVCAP VC Day 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "ma",
+      "inicio": "2026-09-16",
+      "fim": "2026-09-16",
+      "cidade": "São Paulo – SP",
+      "local": ""
+    },
+    {
+      "nome": "ABVCAP Experience 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "ma",
+      "inicio": "2026-09-22",
+      "fim": "2026-09-23",
+      "cidade": "São Paulo – SP",
+      "local": "Hotel Unique"
+    },
+    {
+      "nome": "Private Equity Latin America Forum 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "ma",
+      "inicio": "2026-12-01",
+      "fim": "2026-12-02",
+      "cidade": "São Paulo – SP",
+      "local": "Rosewood São Paulo"
+    },
+    {
+      "nome": "Latin Lawyer M&A Conference 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "ma",
+      "inicio": "2026-12-03",
+      "fim": "2026-12-03",
+      "cidade": "São Paulo – SP",
+      "local": ""
+    },
+    {
+      "nome": "Fortinet Accelerate 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "setor": "ciber",
+      "inicio": "2026-03-09",
+      "fim": "2026-03-13",
+      "cidade": "Las Vegas (NV), EUA",
+      "local": "Mandalay Bay Convention Center"
+    },
+    {
+      "nome": "Fortinet Cybersecurity Summit Brasil 2026",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "setor": "ciber",
+      "inicio": "2026-08-11",
+      "fim": "2026-08-11",
+      "cidade": "São Paulo – SP",
+      "local": "Transamerica Expo Center"
+    },
+    {
+      "nome": "Fortinet XPERTS Summit 2026 (Americas)",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "setor": "ciber",
+      "inicio": "2026-11-09",
+      "fim": "2026-11-14",
+      "cidade": "Nashville (TN), EUA",
+      "local": "Gaylord Opryland Resort"
+    },
+    {
+      "nome": "Fortinet XPERTS Summit 2026 (EMEA)",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "setor": "ciber",
+      "inicio": "2026-07-06",
+      "fim": "2026-07-11",
+      "cidade": "Madri, Espanha",
+      "local": "Meliá Castilla"
+    }
   ]
 }
