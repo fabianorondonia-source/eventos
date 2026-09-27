@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "24/09/2026",
+  "ultimaAtualizacao": "27/09/2026",
   "eventos": [
     {
       "nome": "ExpoISP Expedição — RO",
@@ -740,6 +740,25 @@
       "fim": "2026-07-11",
       "cidade": "Madri, Espanha",
       "local": "Meliá Castilla"
+    },
+    {
+      "nome": "Telco Transformation LATAM 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-08-19",
+      "fim": "2026-08-20",
+      "cidade": "Rio de Janeiro – RJ (Brasil)",
+      "local": "Hotel Windsor Oceânico"
+    },
+    {
+      "nome": "Fortinet Cybersecurity Summit Canada 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "setor": "ciber",
+      "inicio": "2026-11-19",
+      "fim": "2026-11-19",
+      "cidade": "Toronto, Canadá",
+      "local": "Metro Toronto Convention Centre"
     }
   ]
 }
