@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "27/09/2026",
+  "ultimaAtualizacao": "28/09/2026",
   "eventos": [
     {
       "nome": "ExpoISP Expedição — RO",
@@ -458,7 +458,7 @@
       "inicio": "2026-10-22",
       "fim": "2026-10-22",
       "cidade": "Rio de Janeiro – RJ",
-      "local": ""
+      "local": "Windsor Marapendi – Av. Lúcio Costa, 5400, Barra da Tijuca"
     },
     {
       "nome": "Apronet 2026",
@@ -656,10 +656,10 @@
       "categoria": "nacional",
       "serie": "Principal",
       "setor": "ma",
-      "inicio": "2026-06-17",
-      "fim": "2026-06-17",
+      "inicio": "2026-11-10",
+      "fim": "2026-11-10",
       "cidade": "São Paulo – SP",
-      "local": "Rosewood São Paulo"
+      "local": "The W São Paulo"
     },
     {
       "nome": "ABVCAP VC Day 2026",
@@ -759,6 +759,15 @@
       "fim": "2026-11-19",
       "cidade": "Toronto, Canadá",
       "local": "Metro Toronto Convention Centre"
+    },
+    {
+      "nome": "Network X Americas 2026",
+      "categoria": "internacional",
+      "serie": "Principal",
+      "inicio": "2026-05-18",
+      "fim": "2026-05-20",
+      "cidade": "Dallas (TX), EUA",
+      "local": "Irving Convention Center at Las Colinas"
     }
   ]
 }
