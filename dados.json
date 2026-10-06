@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "28/09/2026",
+  "ultimaAtualizacao": "06/10/2026",
   "eventos": [
     {
       "nome": "ExpoISP Expedição — RO",
@@ -768,6 +768,42 @@
       "fim": "2026-05-20",
       "cidade": "Dallas (TX), EUA",
       "local": "Irving Convention Center at Las Colinas"
+    },
+    {
+      "nome": "ExpoISP Expedição — MA",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-10-29",
+      "fim": "2026-10-29",
+      "cidade": "São Luís – MA",
+      "local": ""
+    },
+    {
+      "nome": "ExpoISP Expedição — RN",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-11-12",
+      "fim": "2026-11-12",
+      "cidade": "Mossoró – RN",
+      "local": ""
+    },
+    {
+      "nome": "ExpoISP Expedição — BA",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-11-26",
+      "fim": "2026-11-26",
+      "cidade": "Salvador – BA",
+      "local": ""
+    },
+    {
+      "nome": "ExpoISP SP (Expedição)",
+      "categoria": "nacional",
+      "serie": "ExpoISP",
+      "inicio": "2026-12-10",
+      "fim": "2026-12-10",
+      "cidade": "São Paulo – SP",
+      "local": ""
     }
   ]
 }
