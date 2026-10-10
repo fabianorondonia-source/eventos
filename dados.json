@@ -1,5 +1,5 @@
 {
-  "ultimaAtualizacao": "06/10/2026",
+  "ultimaAtualizacao": "10/10/2026",
   "eventos": [
     {
       "nome": "ExpoISP Expedição — RO",
@@ -804,6 +804,15 @@
       "fim": "2026-12-10",
       "cidade": "São Paulo – SP",
       "local": ""
+    },
+    {
+      "nome": "Abrint Global Congress 2027 (AGC26)",
+      "categoria": "nacional",
+      "serie": "Principal",
+      "inicio": "2027-04-26",
+      "fim": "2027-04-29",
+      "cidade": "São Paulo – SP",
+      "local": "Distrito Anhembi"
     }
   ]
 }
